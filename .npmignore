@@ -1,0 +1,47 @@
+# Source files
+src/
+public/
+
+# Config files
+rsbuild.config.ts
+rspack.config.lib.js
+rspack.config.esm.js
+tsconfig.json
+biome.json
+.storybook/
+
+# Development
+node_modules/
+.vscode/
+.idea/
+*.log
+*.tsbuildinfo
+
+# Testing
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Storybook
+storybook-static/
+**/*.stories.tsx
+**/*.stories.ts
+
+# Build artifacts
+.rsbuild/
+logs/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (keep README.md)
+AGENTS.md
+
+# Misc
+.DS_Store
+*.swp
+*.swo
+*~

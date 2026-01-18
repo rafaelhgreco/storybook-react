@@ -1,10 +1,48 @@
 {
 	"name": "storybook-react",
 	"version": "1.0.0",
-	"private": true,
+	"description": "A modern React component library with flexible rendering via portals",
+	"license": "MIT",
+	"author": "Rafael Henrique Greco",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rafaelhgreco/storybook-react"
+	},
+	"keywords": [
+		"react",
+		"components",
+		"ui",
+		"portal",
+		"typescript",
+		"storybook"
+	],
+	"private": false,
 	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.esm.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.esm.js",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
 	"scripts": {
 		"build": "rsbuild build",
+		"build:lib": "yarn build:lib:umd && yarn build:lib:esm && yarn build:types",
+		"build:lib:umd": "rspack build --config rspack.config.lib.cjs",
+		"build:lib:esm": "rspack build --config rspack.config.esm.cjs",
+		"build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist",
+		"clean": "rm -rf dist *.tgz",
+		"package": "yarn clean && yarn build:lib && yarn pack",
+		"prepublishOnly": "yarn clean && yarn build:lib",
 		"dev": "rsbuild dev --open",
 		"preview": "rsbuild preview",
 		"storybook": "storybook dev -p 6006",
@@ -26,6 +64,8 @@
 		"@emotion/styled": "^11.14.1",
 		"@rsbuild/core": "^1.7.1",
 		"@rsbuild/plugin-react": "^1.4.2",
+		"@rspack/cli": "^1.7.2",
+		"@rspack/core": "^1.7.2",
 		"@storybook/addon-a11y": "^10.1.11",
 		"@storybook/addon-docs": "^10.1.11",
 		"@types/react": "^19.2.7",

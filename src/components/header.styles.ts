@@ -1,5 +1,5 @@
-import { theme } from "@aurora-pkg/ui";
 import styled from "@emotion/styled";
+import { theme } from "../theme";
 
 const Header = styled.header`
     width: 100%;
@@ -31,6 +31,6 @@ const Logo = styled.img`
 `;
 
 export const Styled = {
-    Header,
-    Logo,
+	Header,
+	Logo,
 };

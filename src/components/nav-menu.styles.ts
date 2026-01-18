@@ -1,6 +1,6 @@
-import { theme } from "@aurora-pkg/ui";
 import styled from "@emotion/styled";
 import { NavLink as RouterNavLink } from "react-router-dom";
+import { theme } from "../theme";
 
 const Nav = styled.nav`
     display: flex;
@@ -116,8 +116,8 @@ const NavLink = styled(RouterNavLink)`
 `;
 
 export const Styled = {
-    Nav,
-    Button,
-    Text,
-    NavLink,
+	Nav,
+	Button,
+	Text,
+	NavLink,
 };
