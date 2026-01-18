@@ -46,7 +46,8 @@
 		"dev": "rsbuild dev --open",
 		"preview": "rsbuild preview",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"prepare": "yarn build:lib"
 	},
 	"dependencies": {
 		"react": "^19.2.3",
