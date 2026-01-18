@@ -1,35 +1,37 @@
 {
-  "name": "storybook-react",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "rsbuild build",
-    "dev": "rsbuild dev --open",
-    "preview": "rsbuild preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
-  },
-  "peerDependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "2.3.11",
-    "@rsbuild/core": "^1.7.1",
-    "@rsbuild/plugin-react": "^1.4.2",
-    "@storybook/addon-a11y": "^10.1.11",
-    "@storybook/addon-docs": "^10.1.11",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
-    "storybook": "^10.1.11",
-    "storybook-react-rsbuild": "^3.2.2",
-    "typescript": "^5.9.3"
-  }
+	"name": "storybook-react",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "rsbuild build",
+		"dev": "rsbuild dev --open",
+		"preview": "rsbuild preview",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3",
+		"react-icons": "^5.5.0",
+		"react-router-dom": "^7.12.0"
+	},
+	"peerDependencies": {
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.11",
+		"@emotion/react": "^11.14.0",
+		"@emotion/styled": "^11.14.1",
+		"@rsbuild/core": "^1.7.1",
+		"@rsbuild/plugin-react": "^1.4.2",
+		"@storybook/addon-a11y": "^10.1.11",
+		"@storybook/addon-docs": "^10.1.11",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"storybook": "^10.1.11",
+		"storybook-react-rsbuild": "^3.2.2",
+		"typescript": "^5.9.3"
+	}
 }
